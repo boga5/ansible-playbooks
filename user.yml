@@ -3,8 +3,8 @@
 - tasks:
     name: Creating a user
     user: 
-	  name: rambo 
-	  createhome: yes 
-	  home: /home/rambo 
-	  shell: /bin/bash 
-	  password: 12345678
+      name: rambo 
+      createhome: yes 
+      home: /home/rambo 
+      shell: /bin/bash 
+      password: 12345678
