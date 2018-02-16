@@ -1,5 +1,5 @@
 ---
-- hosts: 18.231.117.86
-  gather_facts: yes
-    - name: Users | Create new user
-      user: name=rambo createhome=yes home=/home/rambo shell=/bin/bash password=12346578
+- hosts: 18.231.117.86 
+  tasks:
+    name: Creating a user
+    user: name=rambo createhome=yes home=/home/rambo shell=/bin/bash password=12345678
