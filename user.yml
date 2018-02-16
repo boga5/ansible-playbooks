@@ -1,5 +1,6 @@
 ---
-- name: Creating a user
+-  hosts: 18.231.117.86 
+-  name: Creating a user
   user: 
     name: rambo
     createhome: yes
