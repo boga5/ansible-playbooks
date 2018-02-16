@@ -1,0 +1,8 @@
+---
+  - name: Creating a user
+    user: 
+      name: ram
+      createhome: yes
+      home: /home/ram
+      shell: /bin/bash
+      password: 12345678
