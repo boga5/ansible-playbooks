@@ -1,7 +1,7 @@
 name: Creating a user
 user: 
-  name: ram
+  name: rambo
   createhome: yes
-  home: /home/ram
+  home: /home/rambo
   shell: /bin/bash
   password: 12345678
