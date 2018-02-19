@@ -1,5 +1,6 @@
 ---
   - name: User creation
+    user:
       name=rambi
       home=/home/rambi
       shell=/bin/bash
