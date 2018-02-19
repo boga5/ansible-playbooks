@@ -1,9 +1,9 @@
 ---
   - hosts: 18.231.113.118
     name: Creating a user
-    user: 
-      name=rambi 
-      createhome=yes 
+    user:
+      name=rambi
+      createhome=yes
       home=/home/rambi
-      shell=/bin/bash 
+      shell=/bin/bash
       password=12345678
