@@ -1,4 +1,5 @@
 ---
+  - hosts: 18.231.113.118
   - name: Creating a user
     user: 
       name=rambi 
