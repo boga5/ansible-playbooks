@@ -1,9 +1,6 @@
 ---
-  - hosts: 18.231.113.118
-    
-    tasks:
-      - name: User creation
-        name=rambi
-        home=/home/rambi
-        shell=/bin/bash
-        password=12345678
+  - name: User creation
+      name=rambi
+      home=/home/rambi
+      shell=/bin/bash
+      password=12345678
