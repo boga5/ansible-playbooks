@@ -1,6 +1,5 @@
 ---
   - hosts: 18.231.113.118
-    remote_user: root
     name: Creating a user
     user:
       name=rambi
