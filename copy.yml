@@ -1,6 +1,7 @@
 ---
   - hosts: 54.233.209.162
-    remote_user: ubuntu
+    #remote_user: ubuntu
     become: yes
+    become_user: ubuntu
     roles:
       - copy
