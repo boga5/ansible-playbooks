@@ -1,5 +1,5 @@
 ---
   - hosts: 54.233.209.162
-    become: true
+    remote_user: root
     roles:
       - copy
