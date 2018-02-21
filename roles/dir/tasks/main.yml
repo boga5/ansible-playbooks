@@ -1,6 +1,7 @@
 ---
   - name: Creating a dir in remote user
-    command: pwd
-               mkdir sample
-               cd sample/
-               pwd
+    command: 
+      - pwd
+        mkdir sample
+        cd sample/
+        pwd
