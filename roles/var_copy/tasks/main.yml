@@ -1,5 +1,7 @@
 ---
   - vars:
       cfile: sample.txt
-  - name: Copying file using variable
-    command: cp /home/ec2-user/{{ cfile }} /home/ubuntu/
+    name: Copying file using variable
+    file: 
+      src: /home/ec2-user/{{ cfile }} 
+      dest: /home/ubuntu/
