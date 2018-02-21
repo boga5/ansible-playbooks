@@ -3,6 +3,6 @@
     become: yes
     remote_user: ubuntu
     vars: 
-      cfile: sample.txt
+      cfile: 'sample.txt'
     roles:
       - var_copy
