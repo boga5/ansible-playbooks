@@ -1,6 +1,8 @@
 ---
   - name: Copying {{ cfile }} using variable
-    file: 
+    copy: 
       src: "/home/ec2-user/{{ cfile }}"
       dest: "/home/ubuntu/"
-      state: file
+      owner: boga
+      group: boga
+      mode: 0644
