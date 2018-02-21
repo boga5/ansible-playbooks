@@ -4,5 +4,10 @@
     remote_user: ubuntu
     vars: 
       cfile: sample.txt
-    roles:
-      - var_copy
+  - name: Copying {{ cfile }} using variable
+    copy: 
+      src: /home/ec2-user/{{ cfile }}
+      dest: /home/ubuntu/dest/
+      owner: boga
+      group: boga
+      mode: 0644
