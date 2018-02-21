@@ -1,0 +1,6 @@
+---
+  - hosts: 54.233.209.162
+    become: yes
+    remote_user: ubuntu
+    roles:
+      - var_copy
