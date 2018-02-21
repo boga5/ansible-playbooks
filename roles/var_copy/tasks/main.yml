@@ -1,6 +1,6 @@
 ---
   - name: Copying {{ cfile }} using variable
-    copy: 
+    file: 
       src: '/home/ec2-user/{{ cfile }}'
       dest: '/home/ubuntu/{{ cfile }}'
       owner: ubuntu
