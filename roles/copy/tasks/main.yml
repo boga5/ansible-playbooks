@@ -1,5 +1,4 @@
 ---
-  - name: Copying a file to diff loc
-    template: 
+  - template: 
       src: /home/ubuntu/sample.txt
       dest: /home/ubuntu/dest/
