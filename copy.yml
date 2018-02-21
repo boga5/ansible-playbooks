@@ -1,0 +1,5 @@
+---
+  - hosts: 54.233.209.162
+    become: true
+    roles:
+      - copy
