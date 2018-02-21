@@ -1,7 +1,6 @@
 ---
   - hosts: 54.233.209.162
-    #remote_user: ubuntu
-    become: yes
-    become_user: ubuntu
+    sudo: yes
+    sudo_user: root
     roles:
       - copy
