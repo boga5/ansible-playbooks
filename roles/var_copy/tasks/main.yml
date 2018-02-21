@@ -1,8 +1,7 @@
 ---
-  - vars:
-      cfile: sample.txt
+  - vars: cfile=sample.txt
     tasks:
-    - name: Copying file using variable
+    - name: Copying {{ cfile }} using variable
       file: 
         src: /home/ec2-user/{{ cfile }} 
         dest: /home/ubuntu/
