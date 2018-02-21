@@ -6,6 +6,4 @@
       cfile: sample.txt
     tasks:
       - name: Copying {{ cfile }} using variable
-        copy: 
-          src: /home/ec2-user/{{ cfile }}
-          dest: /home/ubuntu/
+        copy: src=/home/ec2-user/{{ cfile }} dest=/home/ubuntu/
