@@ -2,5 +2,7 @@
   - hosts: 54.233.209.162
     become: yes
     remote_user: ubuntu
+    vars: 
+      cfile: sample.txt
     roles:
       - var_copy
