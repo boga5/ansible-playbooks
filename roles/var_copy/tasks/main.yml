@@ -3,3 +3,6 @@
     file: 
       src: /home/ec2-user/{{ cfile }} 
       dest: /home/ubuntu/
+      owner: ubuntu
+      group: ubuntu
+      mode: 0644
