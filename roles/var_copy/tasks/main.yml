@@ -2,7 +2,7 @@
   - name: Copying {{ cfile }} using variable
     file: 
       src: '/home/ec2-user/{{ cfile }}'
-      dest: /home/ubuntu/
+      dest: '/home/ubuntu/{{ cfile }}'
       owner: ubuntu
       group: ubuntu
       mode: 0644
