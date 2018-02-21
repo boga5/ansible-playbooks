@@ -1,6 +1,6 @@
 ---
   - hosts: 54.233.209.162
-    sudo: yes
-    sudo_user: root
+    become: yes
+    remote_user: root
     roles:
       - copy
