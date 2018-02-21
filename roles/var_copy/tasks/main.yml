@@ -3,4 +3,4 @@
     file: 
       src: "/home/ec2-user/{{ cfile }}"
       dest: "/home/ubuntu/"
-      state: "file"
+      state: file
