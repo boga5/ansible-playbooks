@@ -25,3 +25,4 @@
           dest: /home/ubuntu/boga
           remote: origin
           clone: yes
+          force: yes
