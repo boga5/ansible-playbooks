@@ -1,1 +1,8 @@
 # ansible-playbooks
+
+- app.yml -> Build and Deploy JAVA app on Tomcat server
+- clone.yml -> Cloning the code into local machine
+- copy.yml -> Copy files into target machine
+- dir.yml -> Creating a dir on target machines
+- user.yml -> Creating users on target machines
+- var_copy.yml -> uasge of variables
