@@ -1,0 +1,27 @@
+---
+  - hosts: 54.233.153.178
+    remote_user: ubuntu
+    become: yes
+    tasks:
+      - name: Creating a source dir
+        file:
+          path: /home/ubuntu/boga
+          state: directory
+          mode: 0777
+
+      - name: Installing Git
+        apt:
+          name: git
+          state: present
+
+      - name: Adding origin
+        command: git remote add origin https://github.com/boga5/Java_sample_app.git
+        args:
+          chdir: /home/ubuntu/boga
+
+      - name: Cloning the repo
+        git:
+          repo: https://github.com/boga5/Java_sample_app.git
+          dest: /home/ubuntu/boga
+          remote: origin
+          clone: yes
