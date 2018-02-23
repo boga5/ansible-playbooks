@@ -1,0 +1,50 @@
+---
+  - hosts: 52.67.99.144
+    remote_user: ubuntu
+    become: yes
+    tasks:
+      - name: Creating a source dir
+        file:
+          path: /home/ubuntu/bogas
+          state: directory
+          mode: 0775
+
+      - name: Installing Git
+        apt:
+          name: git
+          state: present
+
+      - name: Adding origin
+        command: "{{item}}"
+        args:
+          chdir: /home/ubuntu/bogas
+        with_items:
+          - git init .
+          - git remote rm origin
+          - git remote add origin https://github.com/boga5/Java_sample_app.git
+
+      - name: Cloning the repo
+        git:
+          repo: https://github.com/boga5/Java_sample_app.git
+          dest: /home/ubuntu/bogas
+          remote: origin
+          clone: yes
+          force: yes
+
+      - name: Installing maven
+        apt:
+          name: maven
+          state: latest
+
+      - name: Building the project using maven
+        command: mvn clean package
+        args:
+          chdir: /home/ubuntu/bogas/SpringMVCSecurityXML
+
+      - name: Installing tomcat
+        apt:
+          name: tomcat8
+          state: latest
+
+      - name: Deploying war file into webapps folder
+        command: cp /home/ubuntu/bogas/SpringMVCSecurityXML/target/SpringMVCSecurityXML.war /var/lib/tomcat8/webapps
