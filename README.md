@@ -5,4 +5,6 @@
 - copy.yml - Copy files into target machine
 - dir.yml - Creating a dir on target machines
 - user.yml - Creating users on target machines
+- user_creation.yml - Creating users on target machines
 - var_copy.yml - uasge of variables
+- when_condition.yml - Usage of when condition
