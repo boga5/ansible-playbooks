@@ -1,0 +1,7 @@
+---
+  - hosts: tower
+    tasks:
+      - shell: cat passwords
+        register: content
+
+      - shell: echo "content"
